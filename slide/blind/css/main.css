@@ -1,0 +1,73 @@
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.slide{
+    width: 440px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:#fff;
+    -webkit-box-shadow: 0px 0px 5px #aaa;
+    -moz-box-shadow: 0px 0px 5px #aaa;
+    box-shadow: 0px 0px 5px #aaa;
+}
+.slide .content{
+    position: relative;
+    width: 440px;
+    height: 280px;
+    overflow: hidden;
+    padding:4px;
+}
+.slide .slide-b{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 440px;
+    height: 280px;
+    overflow: hidden;
+}
+.slide .slide-b a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* blinds */
+.slide .slide-b a div{
+    float: left;
+    display: inline;
+    width: 40px;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+    -moz-transition: width 1s, margin-left 1s, margin-right 1s, opacity 1s;
+    -webkit-transition: width 1s, margin-left 1s, margin-right 1s, opacity 1s;
+    transition: width 1s, margin-left 1s, margin-right 1s, opacity 1s;
+}
+
+.slide .slide-b img{
+    vertical-align: top;
+}
+.slide .trigger {
+    padding: 6px 0 0;
+}
+.slide .trigger ul{
+    margin-left: 150px;
+}
+.slide .trigger li{
+    float:left;
+    display:inline;
+    margin:0 4px;
+    width:10px;
+    height:10px;
+    overflow:hidden;
+    border-radius:5px;
+    background-color:#9A6728;
+    line-height:100px;
+    cursor:pointer;
+}
+.slide .trigger li.current{
+    background-color:#65CE20;
+    cursor: default;
+}
