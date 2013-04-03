@@ -1,0 +1,26 @@
+.slide {
+    width: 440px;
+    height: 280px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+.slide ul {
+    position: relative;
+}
+.slide li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 440px;
+    height: 280px;
+    vertical-align: top;
+}
+.slide li a {
+    display: block;
+}
+.slide li img {
+    width: 440px;
+    height: 280px;
+    vertical-align: top;
+}
