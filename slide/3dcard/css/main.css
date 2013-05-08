@@ -1,0 +1,45 @@
+.card {
+    width: 234px;
+    height: 209px;
+    margin: 50px auto;
+
+    -webkit-perspective: 600px;
+}
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 205px;
+    padding: 1px;
+    border: 1px solid #333;
+    -webkit-transition: -webkit-transform .5s linear;
+}
+.txt {
+    background-color: #999;
+    color: #333;
+    font-size: 28px;
+    font-family: monaco;
+    text-align: center;
+
+    z-index: 1;
+    -webkit-transform: rotateY(-180deg);
+}
+.image {
+    z-index: 2;
+    -webkit-transform: rotateY(0);
+}
+.image img {
+    width: 230px;
+    height: 205px;
+    vertical-align: top;
+}
+.card:hover .txt {
+    z-index: 2;
+    -webkit-transform: rotateY(0);
+}
+.card:hover .image {
+    z-index: 1;
+    -webkit-transform: rotateY(180deg);
+}
+
