@@ -1,0 +1,121 @@
+header {
+    background: #ed4732;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    box-shadow: 1px 1px 10px #ccc;
+
+}
+header .header-inner {
+    width: 940px;
+    height: 42px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    font-family: \5FAE\8F6F\96C5\9ED1, /* 微软雅黑，默认特殊标题字体 */
+                     \9 ED1\4F53, /* 黑体，win下替换字体 */ \6587\6CC9\9A7F\6B63\9ED1\4F53, /* 文泉驿正黑体，unix/linux下替换字体 */ \534E\6587\7EC6\9ED1; /* 华文细黑，mac os下替换字体 */
+}
+header h1 {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 10px;
+}
+header h1 img {
+    vertical-align: middle;
+}
+header nav {
+    float: left;
+}
+header li {
+    float: left;
+    padding: 0 10px;
+}
+header li a {
+    display: block;
+    height: 40px;
+    line-height: 46px;
+}
+header li a:link,
+header li a:visited {
+    color: #fff;
+}
+header li a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+}
+header li.current {
+    background-color: #f4907f;
+}
+header li.current a:link,
+header li.current a:visited,
+header li.current a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+}
+header .search {
+    float: right;
+    height: 42px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+header .search:active {
+    background-color: #f4907f;
+}
+header .search span {
+    float: left;
+    height: 40px;
+    line-height: 46px;
+    margin-right: 4px;
+}
+header .search img {
+    float: left;
+    margin-top: 17px;
+}
+
+#content {
+    margin-top: 44px;
+}
+
+section.row {
+    zoom: 1;
+}
+section.row:after {display:block;clear:both;height:0;content:"\0020";}
+
+div.case {
+    zoom: 1;
+    background-color: #2c3e50;
+}
+div.case:after {display:block;clear:both;height:0;content:"\0020";}
+.case .user {
+    float: left;
+    padding: 22px 20px;
+    width: 110px;
+    overflow: hidden;
+    color: #fff;
+}
+.case .user dt {
+    border: 3px solid #ffffff;
+    display: block;
+    width: 84px;
+    height: 84px;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.case .user dt img {
+    vertical-align: middle;
+}
+.case .user dd.name {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: Monaco, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
