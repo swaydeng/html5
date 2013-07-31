@@ -79,7 +79,10 @@ header .search img {
 #content {
     margin-top: 44px;
 }
-
+.screen {
+    width: 1000px;
+    margin: 0 auto;
+}
 section.row {
     zoom: 1;
 }
@@ -118,4 +121,19 @@ div.case:after {display:block;clear:both;height:0;content:"\0020";}
     font-size: 14px;
     font-family: Monaco, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
+}
+.case .user dd.name a:link,
+.case .user dd.name a:visited {
+    color: #fff;
+}
+.case .user dd.name a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+.case .main {
+    margin-left: 150px;
+    min-height: 132px;
+    background-color: #34495e;
+    overflow: hidden;
+    padding: 20px;
 }
